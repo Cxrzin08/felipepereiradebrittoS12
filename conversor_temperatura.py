@@ -6,7 +6,7 @@ class Temperatura:
         resultado = valor_c * 1.8 + 32
         return resultado
 
-    def f_para_c():
+    def f_para_c(valor_f):
         resultado = valor_f - 32 / 1.8
         return resultado
 
