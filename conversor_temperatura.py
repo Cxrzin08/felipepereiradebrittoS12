@@ -9,9 +9,3 @@ class Temperatura:
     def f_para_c():
         pass
 
-
-
-teste = Temperatura.c_para_f(0)
-print(f"{teste}")
-
-
