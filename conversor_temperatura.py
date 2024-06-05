@@ -7,5 +7,6 @@ class Temperatura:
         return resultado
 
     def f_para_c():
-        pass
+        resultado = valor_f - 32 / 1.8
+        return resultado
 
