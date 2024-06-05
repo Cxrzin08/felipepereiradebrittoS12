@@ -1,20 +1,13 @@
-import limpartexto
-class Principal:
-    def _init_(self) -> None:
-        pass
+from conversor_temperatura import Temperatura
 
-    while True:
-        teste = input("Olá, sou o programa do Felipe, o que você deseja fazer?\n1. Deseja converter medidas?\n2. Deseja converter temperaturas?\n3. Encerrar programa?\n")
-        if teste == "1":
-            import conversor_medidas
-        elif teste == "2":
-            import conversor_temperatura
-        elif teste == "3":
-            print("Programa encerrado.")
-            break
-        else:
-            print("Digite uma opção válida")
-            while True:
-             oi2 = input("Pressione Enter para continuar...")
-             if oi2 == int and float:
-                 print("Por favor digite apenas 'Enter'")
+print('''
+    [0]. Sair
+    [1]. Temperatura - C para F
+      ''')
+selecao = input("Digite uma opção: ")
+
+
+if selecao == "1":
+    valor_c = float(input("Qual a temperatura em celcius que deseja converter?"))
+    resultado = Temperatura.c_para_f(valor_c)
+    print(f"A temperatura convertida é :{resultado}")
