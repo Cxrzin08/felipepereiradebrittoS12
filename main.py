@@ -1,4 +1,5 @@
 from conversor_temperatura import Temperatura
+from conversor_medidas import Medidas
 
 print('''
     [0]. Sair
