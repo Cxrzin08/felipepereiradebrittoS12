@@ -9,6 +9,3 @@ class ConversorMedidas:
     def m_para_cm(valor_m):
         resultado = valor_m * 100
         return resultado
-
-
-
