@@ -24,7 +24,10 @@ elif selecao == "2"
     print(f"A temperatura convertida é : {resultado}")
 elif selecao == "3":
     valor_cm = float(input("Digite os metros que  deseja converter":))
-resultado =      ConversorMedidas.cm_para_m(valor_cm)
-
+resultado =     ConversorMedidas.cm_para_m(valor_cm)
+print(f"Os metros convertidos para centímetros é:")
 elif selecao == "4":
-    valor_m = float(input("Digite os centímetros que deseja converter:"))
+     valor_m = float(input("Digite os centímetros que deseja converter:"))
+     resultado = ConversorMedidas.m_para_cm(valor_m)
+     print(f"Os centímetros convertidos para metros é :")
+    
