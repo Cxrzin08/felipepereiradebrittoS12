@@ -5,12 +5,18 @@ print('''
     [0]. Sair
     [1]. Temperatura - Celsius para Fahrenheit
     [2]. Temperatura - Fahrenheit para Celsius
-    [3]. Converter medidas - Centímetros para Metros
+    [3]. Converter medidas - Centímetros para Metros      
     [4]. Converter medidas - Metros para Centímetros
       ''')
-selecao = input("Digite uma opção: ")
 
 
+while True:
+    selecao = input("Digite uma opção: ")
+    if selecao in ["0", "1", "2", "3", "4"]:
+        break
+    else:
+        print("Opção inválida, por favor selecione uma das opções.")
+        
 if selecao == "0":
     print("Programa encerrado")
     exit()
@@ -30,3 +36,5 @@ elif selecao == "4":
     valor_m = float(input("Digite os centímetros que deseja converter:"))
     resultado = ConversorMedidas.m_para_cm(valor_m)
     print(f"Os centímetros convertidos para metros é :{resultado}")
+
+teste = input("Deseja voltar para a tela inical se caso deseja digite (Sim):\n").capitalize
