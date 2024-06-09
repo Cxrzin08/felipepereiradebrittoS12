@@ -19,22 +19,22 @@ while True:
         
 match selecao:
 
-case "0":
+   case "0":
     print("Programa encerrado")
     exit()
-case "1":
+   case "1":
     valor_c = float(input("Qual a temperatura em celcius que deseja converter?"))
     resultado = Temperatura.c_para_f(valor_c)
     print(f"A temperatura convertida é : {resultado}")
-case "2":
+   case "2":
     valor_f = float(input("Qual a temperatura em fahrenheit que deseja converter?"))
     resultado = Temperatura.f_para_c(valor_f)
     print(f"A temperatura convertida é : {resultado}")
-case "3":
+   case "3":
     valor_cm = float(input("Digite os metros que você deseja converter?"))
     resultado = ConversorMedidas.cm_para_m(valor_cm)
     print(f"Os metros convertidos para centímetros é: {resultado}")
-case "4":
+   case "4":
     valor_m = float(input("Digite os centímetros que deseja converter:"))
     resultado = ConversorMedidas.m_para_cm(valor_m)
     print(f"Os centímetros convertidos para metros é :{resultado}")
