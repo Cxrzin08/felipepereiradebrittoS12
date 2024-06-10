@@ -21,10 +21,11 @@ while True:
     reiniciar()
     selecao = input("Digite uma opção: ")
     if selecao in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]:
+        
         if selecao == "0":
             print("Programa encerrado.")
             break
-
+        
         match selecao:
             case "1":
                 valor = float(input("Digite o valor da temperatura: "))
@@ -65,7 +66,7 @@ while True:
             case "10":
                 valor = float(input("Digite o valor para a conversão: "))
                 resultado = ConversorMedidas.km_para_m(valor)
-                print(f"Os kilômetros convertidos para metros é: {resultado} Metros")
+                print(f"Os kilômetros convertidos para metros é: {resultado} metros")
 
         while True:
             teste = input("\n\nDeseja voltar para a tela inicial? Se sim, digite (Sim)\nDeseja encerrar o programa? Se sim, digite (Encerrar): ").capitalize()
