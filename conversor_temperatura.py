@@ -2,6 +2,7 @@ class Temperatura:
     def __init__(self):
         pass
 
+
     def c_para_f(valor_c):
         resultado = valor_c * 1.8 + 32
         return resultado
