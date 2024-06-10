@@ -25,44 +25,51 @@ while True:
     else:
         print("Opção inválida, por favor digite uma opção válida")
 
-if selecao == "0":
-    print("Programa encerrado.")
-    exit()
-elif selecao in ["1", "2", "3", "4", "5", "6"]:
-    valor = float(input("Digite o valor da temperatura: "))
-    if selecao == "1":
+match selecao:
+    case "0":
+        print("Programa encerrado.")
+        exit()
+    case "1":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.c_para_f(valor)
         print(f"A temperatura convertida é: {resultado} Fahrenheit")
-    elif selecao == "2":
+    case "2":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.f_para_c(valor)
         print(f"A temperatura convertida é: {resultado} Celsius")
-    elif selecao == "3":
+    case "3":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.k_para_c(valor)
         print(f"A temperatura convertida é: {resultado} Celsius")
-    elif selecao == "4":
+    case "4":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.c_para_k(valor)
         print(f"A temperatura convertida é: {resultado} Kelvin")
-    elif selecao == "5":
+    case "5":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.k_para_f(valor)
         print(f"A temperatura convertida é: {resultado} Fahrenheit")
-    elif selecao == "6":
+    case "6":
+        valor = float(input("Digite o valor da temperatura: "))
         resultado = Temperatura.f_para_k(valor)
         print(f"A temperatura convertida é: {resultado} Kelvin")
-elif selecao in ["7", "8", "9", "10"]:
-    valor = float(input("Digite o valor para a conversão: "))
-    if selecao == "7":
+    case "7":
+        valor = float(input("Digite o valor para a conversão: "))
         resultado = ConversorMedidas.cm_para_m(valor)
         print(f"Os centímetros convertidos para metros é: {resultado} Metros")
-    elif selecao == "8":
+    case "8":
+        valor = float(input("Digite o valor para a conversão: "))
         resultado = ConversorMedidas.m_para_cm(valor)
         print(f"Os metros convertidos para centímetros é: {resultado} Centímetros")
-    elif selecao == "9":
+    case "9":
+        valor = float(input("Digite o valor para a conversão: "))
         resultado = ConversorMedidas.m_para_km(valor)
         print(f"Os metros convertidos para kilômetros é: {resultado} Kilômetros")
-    elif selecao == "10":
+    case "10":
+        valor = float(input("Digite o valor para a conversão: "))
         resultado = ConversorMedidas.km_para_m(valor)
         print(f"Os kilômetros convertidos para metros é: {resultado} metros")
-                
+
 while True:
     teste = input("\n\nDeseja voltar para a tela inicial? Se sim, digite (Sim) \nDeseja encerrar o programa? Se sim digite (Encerrar)\n").capitalize()
     if teste == "Sim":
